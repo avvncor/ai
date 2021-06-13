@@ -1,10 +1,10 @@
 import React from 'react'
-import Person from '../../img/person.png';
-import Mountain1 from '../../img/mountain1.png';
-import Mountain2 from '../../img/mountain2.png';
-import Mountain3 from '../../img/mountain3.png';
-import Sky from '../../img/sky.png';
-import AvvncorLogoSmallTransparent from '../../img/Avvncor logo very small.png'
+import Person from '../../img/person1.png';
+import Mountain1 from '../../img/mountain11.png';
+import Mountain2 from '../../img/mountain22.png';
+import Mountain3 from '../../img/mountain33.png';
+import Sky from '../../img/sky1.png';
+// import AvvncorLogoSmallTransparent from '../../img/Avvncor logo very small.png'
 
 
 function Header() {
