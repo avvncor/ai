@@ -4,16 +4,28 @@ import Mountain1 from '../../img/mountain11.png';
 import Mountain2 from '../../img/mountain22.png';
 import Mountain3 from '../../img/mountain33.png';
 import Sky from '../../img/sky1.png';
+import { useSelector, useDispatch } from "react-redux";
+import { userinfo } from '../../store/Actions/userActions';
+
 // import AvvncorLogoSmallTransparent from '../../img/Avvncor logo very small.png'
 
 
 function Header() {
+
+
+const userInfo = useSelector((state)=> state.userInformation)
+console.log(userInfo)
+  let dispatch = useDispatch();
+
+  function userinfofunction(info){
+     dispatch(userinfo(info)) }
+
     return (
         <header>
             <nav>
                 <div className="container">
                     <h3 className="logo">Avvncor<span> Initiates</span></h3>
-                    <div className="hamburger-menu">
+                    <div className="hamburger-menu" onClick={e=>userinfofunction({name:'Amaan'})}>
                         <div className="bar"></div>
                     </div>
                 </div>

@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from "./serviceWorker";
-
+import { Provider } from 'react-redux'
+import store from './store/store'
 
 ReactDOM.render(
   <React.StrictMode>
+    <Provider store={store}>
     <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -18,5 +21,5 @@ ReactDOM.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 serviceWorker.register();
-// serviceWorker.registerServiceWorker()
+serviceWorker.registerServiceWorker()
 
